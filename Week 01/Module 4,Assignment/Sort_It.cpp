@@ -9,8 +9,14 @@ int main()
     {
         cin >> n[i];
     }
-    sort(n, n + a);                 // Ascendig
-    sort(n, n + a, greater<int>()); // descending
+
+    sort(n, n + a);
+    for (int i = 0; i < a; i++)
+    {
+        cout << n[i] << " ";
+    }
+    cout << endl;
+    sort(n, n + a, greater<int>());
     for (int i = 0; i < a; i++)
     {
         cout << n[i] << " ";
