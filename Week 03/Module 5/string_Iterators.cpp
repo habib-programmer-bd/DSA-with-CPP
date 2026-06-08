@@ -11,10 +11,17 @@ int main()
     // }
 
     // but samne string ar index number takbe na ,tokon amara lterarore use korbo.
-    for (auto it = s.begin(); it < s.end(); it++)
+    for (auto it = s.begin(); it != s.end(); it++)
     {
         cout << *it << endl;
     }
+
+
+    //string ar 2 ta iterators ace segulo hocce.,
+    //s.begin() and s.end()
+    cout << *s.begin() << endl;
+    cout << *(s.end() -1) << endl;
+
 
     return 0;
 }
